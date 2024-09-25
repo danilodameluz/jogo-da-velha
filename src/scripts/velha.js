@@ -90,13 +90,14 @@ function checaVencedor(){
     if (checaSequencia(quadrado3, quadrado5, quadrado7)) {
         mudaCorQuadrado(quadrado3, quadrado5, quadrado7);
         mudarVencedor(quadrado3);
+        exibirAlertaVencedor(quadrado3.innerHTML); // Chamada corrigida
+        return;
     }
 
      
     if (checaSequencia(quadrado1, quadrado2, quadrado3)) {
         mudaCorQuadrado(quadrado1, quadrado2, quadrado3);
         mudarVencedor(quadrado1);
-        exibirAlertaVencedor(quadrado1.innerHTML); // Chamada corrigida
         return;
     }
 } 
